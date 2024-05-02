@@ -1,0 +1,243 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Rent a car - 20230039
+      </title>
+      <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/home.css">
+      <style>
+         *{
+         color:white;
+         font-family: Arial, Helvetica, 
+         sans-serif;
+         }
+         body{
+         background-color:#001233;
+         }
+         .divinfo a:link{
+         text-decoration: none;
+         font-size:14px;
+         font-weight: 700;
+         padding: 15px 30px;
+         background-color: #FF595A;
+         cursor: pointer;
+         width:30%;
+         margin-left:35%;
+         }
+         .divinfo a:hover{
+         background-color:white;
+         color:black;
+         }
+         .divinfo a:active {
+         color: blue;
+         }
+         .rentcard{
+         width:90%;
+         margin-left:5%;
+         border: 2px solid black;
+         border-radius:10px;
+         display:flex;
+background-color:#4A537B;
+         }
+         #renttable{
+         width:80%;
+         margin-left:10%;
+         margin-top:50px;
+         }
+         .rentcard img {
+         width:80%;
+         float:right;
+         border: 1px;
+         border-radius:9px;
+         }
+         .divinfo {
+         width:100%;
+         float:left;
+         }
+         .divinfo p{
+         text-align:left;
+         margin-right:5px;
+         margin-bottom:50px;
+font-size:24px;
+         margin-left:10px;
+         }
+         #renttable, #renttable th, #renttable td {
+         border:1px solid black;
+         border-collapse:collapse;
+         }
+         #renttable th {
+         padding:10px;
+         background-color: #FF595A;
+         }
+         #renttable tr{background-color: 
+         #CAC0B3;} 
+         #renttable td{
+         text-align:center;
+         padding:10px;
+         }
+         .speclist{
+         display:flex;
+         width:80%;
+         margin-left:10%;
+         margin-top:30px;
+         }
+         .speclist li{
+         font-size:16px; 
+         margin-left:50px;
+         }
+         h1{
+         text-align:left;}
+
+         #rentalert{
+         background-color: #CAC0B3;
+         font-size:16px;
+         padding:5px;
+         margin-right:40%;
+         margin-left:10px;
+         margin-bottom:100px;
+         color:black;
+         padding-left:5px;
+         border:1px;
+         border-color:#CAC0B3;
+         border-radius:9px;
+         }
+       
+         .rlocation, .rfeatures{
+         width:80%;
+         margin-left:10%;
+         border: 1px solid black;
+         border-radius:10px;
+         margin-top:50px;
+background-color:#4A537B;
+         }
+         .renth3{
+         color:#FF595A;
+         margin-left:10px;
+         }
+        #spvid{
+         width:90%;
+         margin:10px 5%;
+         border:2px solid #001233;
+         border-radius:9px;
+         }
+        #gmap{
+         width:80%;
+         margin-left:10%;
+         margin-bottom:10px;
+         border:2px solid #001233;
+         border-radius:9px;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <ul>
+             <li class="nav">
+                 <a href="home.html">
+                     <img src="media/images/download (2).ico" alt="page icon"
+                     class="icon" title="home page">
+                 </a>
+             </li>
+             <li class="nav">
+                 <a href="home.html#best-sales"><span class="header" id="first">best sales</span></a>
+             </li>
+             <li class="nav">
+                 <a href="#offers"><span class="header">offers</span></a>
+             </li>
+             <li class="nav">
+                 <a href="#all"><span class="header">all cars</span></a>
+             </li>
+             <li class="nav">
+                 <a href="index.html"><span class="header">login</span></a>
+             </li>
+             <li class="nav">
+                 <a href="index.html"><span class="header">registration</span></a>
+             </li>
+             <li class="nav">
+                 <a href="service.html"><span class="header">service</span></a>
+             </li>
+         </ul>
+     </header>
+      <h1> Book a car </h1>
+      <div class="rentcard">
+         <div class="divinfo">
+            <p> 
+               <b>Hyundai Elantra HD (2020)</b> 
+               <br>
+               gray,
+               with a driver
+            </p>
+            <p id="rentalert"> alert: 
+               you will pay reparation costs if 
+               the car broke down
+            </p>
+            <a href="booking.htm"> book </a>
+         </div>
+         <img src="media/images/rent1-img1.png">
+      </div>
+      <table id="renttable">
+         <tr>
+            <th> Rental duration 
+            </th>
+            <th> Price </th>
+            <th> Previous users 
+            </th>
+         </tr>
+         <tr>
+            <td> day </td>
+            <td> 1,000 L.E</td>
+            <td> 2 </td>
+         </tr>
+         <tr>
+            <td> week </td>
+            <td> 6,000 L.E </td>
+            <td rowspan="2"> 0 
+            </td>
+         </tr>
+         <tr>
+            <td> month </td>
+            <td> 18,000 L.E </td>
+         </tr>
+      </table>
+      <div class="rfeatures">
+         <h3 class="renth3"> Specifications & 
+            Features <i class="fa-solid fa-gears"></i> 
+         </h3>
+         <video id="spvid" controls muted autoplay>
+            <source src="media/videos/2010 Hyundai Elantra GLS Interior.mp4" 
+               type="video/mp4">
+         </video>
+         <div>
+            <ul class="speclist">
+               <li><b>Gearbox:</b> 
+                  Automatic
+               </li>
+               <li><b>Mileage:</b> 100000 
+                  - 150000 KM
+               </li>
+               <li><b>Fuel type:</b> Gas</li>
+            </ul>
+         </div>
+         <div>
+            <ul class="speclist">
+               <li>Air Condition</li>
+               <li>Cruise Control</li>
+               <li>CD Player</li>
+            </ul>
+         </div>
+      </div>
+      <div class="rlocation">
+         <h3 class="renth3"> Location <i class="fa-solid fa-location-dot"></i> </h3>
+         <p style="margin-left:10px;">Shubra Al Khaymah, 
+            Bahtim, Qesm Than Shubra Al 
+            Kheimah, Al Qalyubia Governorate, 
+            Egypt
+         </p>
+         <iframe id="gmap" 
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Shubra%20Al%20Khaymah,%20Bahtim,%20Qesm%20Than%20Shubra
+%20Al%20Kheimah,%20Al%20Qalyubia%20Governorate,%20Egypt+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="600" frameborder="0">
+         </iframe>
+      </div>
+   </body>
+</html>

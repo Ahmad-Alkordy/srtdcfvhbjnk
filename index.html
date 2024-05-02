@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm" class="form" action="home.html">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" id="loginEmail" required>
+            <input type="password" placeholder="Password" id="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <form id="registerForm" class="form">
+            <h2>Register</h2>
+            <input type="text" placeholder="Full Name" id="registerName" required>
+            <input type="email" placeholder="Email" id="registerEmail" required>
+            <input type="password" placeholder="Password" id="registerPassword" required>
+            <input type="password" placeholder="Confirm Password" id="confirmPassword" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event)) {
+            event.preventDefault();
+            var email = document.getElementById('loginEmail').value;
+            var password = document.getElementById('loginPassword').value;
+        function validateEmail() {
+	var emailField = $('#email');
+	var emailPattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/; // Simple regex for email validation
+
+	if (!emailPattern.test(emailField.val())) {
+		alert('Please enter a valid email address.');
+		return false;
+	}
+	return true;
+}}
+
+
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('registerName').value;
+            var email = document.getElementById('registerEmail').value;
+            var password = document.getElementById('registerPassword').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            // Simulate registration functionality (replace with actual registration logic)
+            if (password === confirmPassword) {
+                alert('Registration successful!');
+            } else {
+                alert('Passwords do not match!');
+            }
+        });
+    </script>
+</body>
+</html>

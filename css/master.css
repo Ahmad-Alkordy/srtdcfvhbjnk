@@ -1,0 +1,395 @@
+/* 
+* {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroli
+} */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header{
+background-color: aliceblue;
+width: 100%;
+position: fixed;
+z-index: 999;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 100px ;
+
+}
+
+.logo{
+text-decoration: none;
+color: black;
+font-weight: 700;
+font-size: 1.4em;
+}
+
+.navigation a{
+color: black;
+text-decoration: none;
+font-weight: 500;
+font-size: 1.2em;
+padding-left: 30px;
+
+}
+.navigation a:hover{
+    color: red;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../media/images/th.jpg) no-repeat;
+    background-size:cover ;
+}
+
+.main h2{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: -250px ;
+    text-transform: uppercase;
+    
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top:20px ;
+    margin-left: -200px;
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h2 div{
+    margin-left: -200px;
+    margin-bottom: -30px;
+    font-size: 1.3em;
+    
+}
+
+.main h3{
+color: white;
+font-size: 1.5em;
+font-weight: 500;
+letter-spacing: 1px;
+margin-top:20px ;
+margin-left: -200px;
+text-transform: uppercase;
+}
+
+.main2 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../media/images/pego\ 508\ mian.jpg) no-repeat;
+    background-size:cover ;
+}
+
+.main2 h2{
+    color: black;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: -250px ;
+    text-transform: uppercase;
+    
+}
+
+.main2 h2 span{
+    display: inline-block;
+    margin-top:20px ;
+    margin-left: -200px;
+    color: rgb(0 , 0 , 0);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main2 h2 div{
+    margin-left: -200px;
+    margin-bottom: -30px;
+    font-size: 1.3em;
+    
+}
+
+.main2 h3{
+color: black;
+font-size: 1.5em;
+font-weight: 500;
+letter-spacing: 1px;
+margin-top:20px ;
+margin-left: -200px;
+text-transform: uppercase;
+}
+
+.title{
+display: flex;
+justify-content: center;
+font-size: 2.7em;
+font-weight: 900;
+margin-bottom:60px ;
+}  
+
+.content{
+    
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+
+    .card img{
+        width: 300px;
+        height: 300px;
+        
+    }
+
+    .card2 img{
+        width: 300px;
+        height: 300px;
+         
+    }
+
+   .card3 img{
+    width: 300px;
+    height: 300px;
+    
+   }
+   .card4 img{
+    width: 300px;
+    height: 300px;
+    
+   }
+   .card5 img{
+    width: 300px;
+    height: 300px;
+    
+   }
+   .card6 img{
+    width: 300px;
+    height: 300px;
+    
+   }
+   .card7 img{
+    width: 300px;
+    height: 300px;
+    
+   }
+   .card8 img{
+    width: 300px;
+    height: 300px;
+    
+   }
+   .card9 img{
+    width: 300px;
+    height: 300px;
+    
+   }
+
+.card{
+    background-color: rgb(41, 41, 188);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card2{
+    background-color: rgb(39, 202, 39);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+
+.card3{
+    background-color: rgb(238, 234, 234);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+
+.card4{
+    background-color: rgb(194, 5, 5);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+.card5{
+    background-color: rgb(25, 25, 229);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+.card6{
+    background-color: silver;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+.card7{
+    background-color:rgb(59, 56, 56);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+.card8{
+    background-color:rgb(235, 235, 26);
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+.card9{
+    background-color: silver;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease; 
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+.card2:hover{
+    transform: scale(1.1);
+}
+.card3:hover{
+    transform: scale(1.1);
+}
+.card4:hover{
+    transform: scale(1.1);
+}
+.card5:hover{
+    transform: scale(1.1);
+}
+.card6:hover{
+    transform: scale(1.1);
+}
+.card7:hover{
+    transform: scale(1.1);
+}
+.card8:hover{
+    transform: scale(1.1);
+}
+.card9:hover{
+    transform: scale(1.1);
+}
+
+.info{
+  text-align: center;
+}
+
+.info h3{
+    font-size: 1.3em;
+    font-weight: 1200;
+
+}
+
+video{
+    width: 80%;
+    margin-left: 150PX;
+    margin-top: 20px;
+}
+
+.vidio1{
+    margin: auto;
+}
+.vidio1 a{
+    color: rgb(222, 64, 64);
+text-decoration: none;
+font-weight: 900;
+font-size: 2.2em;
+padding: 50px;
+margin: auto;
+background-color: silver;
+width: 21.25em;
+box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+border-radius: 10px;
+transition: 0.7s ease; 
+}
+
+.vidio1 a:hover{
+    color: blue;
+    transform: scale(1,1);
+}
+
+.vidio1:hover{
+    transform: scale(1,1);
+}
+
+.per {
+    color: rgb(133, 62, 62);
+    font-size: 1.3em;
+    font-weight: 600px;
+    padding: 20px;
+    margin: 10px;
+    background-color: silver;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    transition: 0.7s ease; 
+}
+
+.per:hover{
+    transform: scale(1,1);
+}
+
+.paragraph{
+    color: black;
+    font-weight: 500px;
+    margin: 30px;
+padding: 20px;
+}
+
+#form1{
+    text-align: center;
+    margin-top:20px ;
+}
+.table{
+    margin-bottom: 20px;
+}
+
+.rater{
+    margin: 20px;
+}

@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>booking - 20230039</title>
+      <link rel="stylesheet" href="css/home.css">
+      <script>
+         function clicked(){
+let x = document.getElementById("phone").value;
+  if (isNaN(x) || x < 1 || x > 10) {
+    alert("Enter a valid phone number");
+  } 
+else {
+    alert('we will contact you after the owner accepts');}
+}
+function showorhide(){
+var x = document.getElementById("checkyes");
+if (x.checked)
+{
+document.getElementById("optional").style.display="none";
+}
+else
+{
+document.getElementById("optional").style.display="block";
+}
+}
+      </script>
+      <style> 
+         *{
+         color:white;
+         font-family: Arial, Helvetica, sans-serif;
+         }
+         body{
+         background-color:#001233;
+         }
+         div.rentform{
+         width:80%;
+         border:2px solid black;
+border-radius:10px;
+padding:10px;
+         margin-left:10%;
+         display:flex;
+background-color:#20092A;
+         }
+         form.rentform{
+         width:100%;
+         margin-left:30%;
+         margin-top:10px;
+         }
+         form.rentform input[type=text], form.rentform input[type=email], form.rentform input[type=date] {
+         width: 50%;
+         padding: 10px 15px;
+         margin:10px 0px;
+         border: 1px solid black;
+         border-radius: 4px;
+         color:black;
+         font-size:18px;
+         }
+         form.rentform input[type=submit]{
+         padding:10px 20px;
+         background-color:#FF595A;
+         border:none;
+         margin-left:20%;
+         cursor: pointer;
+         margin-bottom:10px;
+         }
+         form.rentform input[type=submit]:hover{
+         background-color:white;
+         color:black;
+         }
+         h1{
+         margin-left:10px;
+         }
+
+      </style>
+   </head>
+   <body>
+      <header>
+         <ul>
+             <li class="nav">
+                 <a href="home.html">
+                     <img src="media/images/download (2).ico" alt="page icon"
+                     class="icon" title="home page">
+                 </a>
+             </li>
+             <li class="nav">
+                 <a href="home.html#best-sales"><span class="header" id="first">best sales</span></a>
+             </li>
+             <li class="nav">
+                 <a href="#offers"><span class="header">offers</span></a>
+             </li>
+             <li class="nav">
+                 <a href="#all"><span class="header">all cars</span></a>
+             </li>
+             <li class="nav">
+                 <a href="index.html"><span class="header">login</span></a>
+             </li>
+             <li class="nav">
+                 <a href="index.html"><span class="header">registration</span></a>
+             </li>
+             <li class="nav">
+                 <a href="service.html"><span class="header">service</span></a>
+             </li>
+         </ul>
+     </header>
+      <h1>Last Step</h1>
+      <div class="rentform">
+         <form class="rentform">
+            <label for="name"> Name: </label><br>
+            <input type="text" id="name" required>
+            <br>
+            <label for="id"> ID: </label>
+            <br>
+            <input type="text" id="id" required>
+            <br>
+            <label for="phone"> Phone Number: </label>
+            <br>
+            <input type="text" id="phone">
+            <br>
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" id="email" required>
+            <br>
+            <label for="start date">Rent will start on: </label>
+            <br>
+            <input type="date" id="start date" required>
+            <br>
+            <label for="end date">Rent will end on: </label>
+            <br>
+            <input type="date" id="end date" required>
+            <br>
+
+            <p>Do you agree on the owner's prices? </p>
+
+            <input type="radio" name="prices" id="checkyes" onclick="showorhide()" checked>
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="prices" id="checkno" onclick="showorhide()">
+            <label for="no">I have an offer</label><br><br>
+<div id="optional" style="display:none;">
+            <label for="offer">How much do you offer? </label>
+            <br>
+            <input type="text" id="offer">
+            <br>
+</div>
+            <input type="submit"  onclick="clicked()" value="Book">
+         </form>
+      </div>
+   </body>
+</html>
